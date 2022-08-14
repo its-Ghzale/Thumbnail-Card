@@ -1,0 +1,123 @@
+*{
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    transition: box-shadow .3s;
+}
+.card:hover{
+    box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+}
+.card-thumb{
+    max-width: 328px;
+    height: 200px;
+    overflow: hidden;
+    transition: height .3s;
+}
+.card:hover .card-thumb{
+    height: 90px;
+}
+.card-thumb img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity .3s,transform .3s;
+}
+.card:hover .card-thumb img{
+    opacity: .6;
+    transform: scale(1.2);
+}
+.card .card-date{
+    background-color: #ff6000;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    min-width: 62px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px;
+}
+.card-day{
+    display: block;
+    font-size: 15px;
+}
+.card-month{
+    display: block;
+    font-size: 12px;
+}
+.card-body{
+    position:relative;
+    padding: 20px;
+    height: 185px;
+    transition: height .3s;
+}
+.card:hover .card-body{
+    height: 330px;
+}
+.card-category{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    height: 25px;
+    padding: 0 15px;
+    background-color: #ff6000;
+    color: white;
+    font-size: 12px;
+    line-height: 23px;
+}
+.card-category a{
+    color: white;
+    font-size: 12px;
+}
+.card-title{
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 22px;
+    color: black;
+}
+.card-subtitle{
+    margin: 0;
+    padding: 0 0 10ox 0;
+    font-size: 19px;
+    color: #ff4800;
+}
+.card-description{
+    position: absolute;
+    top: 126px;
+    left: 20px;
+    right: 20px;
+    bottom: 65px;
+    margin: 0;
+    color: #666c74;
+    font-size: 16px;
+    line-height: 27px;
+    opacity: 0;
+    transition: opacity .2s,transform .2s;
+    transform: translateY(25px);
+}
+.card:hover .card-description{
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-footer{
+    position: absolute;
+    color: #a3a9ab;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 13px;
+}
+.card-footer span{
+    margin-right: 10px;
+}
